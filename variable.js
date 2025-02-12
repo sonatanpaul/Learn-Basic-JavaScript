@@ -10,3 +10,12 @@ let number = 20;
 let isPoor = true;
 
 // learn variable type
+
+// number type variable
+let footballPrice = 1500;
+
+// string type variable
+let name = "Sonatan";
+
+// boolean type variable
+let isPassed = true;

@@ -58,3 +58,24 @@ if (book1.toUpperCase() === book2.toUpperCase()) {
   console.log("Ami Porte Boshbo nah");
 }
 // answer: ami porte boshbo
+
+// how to remove space right side and left side in string
+const name1 = " Sonatan";
+const name2 = "Sonatan ";
+// option -1
+if (name1 === name2) {
+  console.log("This is my name");
+} else {
+  console.log("This is not my name");
+}
+
+//ans: This is not my name
+
+//option - 2
+if (name1.trim() === name2.trim()) {
+  console.log("My name is match");
+} else {
+  console.log("My name is not match");
+}
+
+//ans: My name is match

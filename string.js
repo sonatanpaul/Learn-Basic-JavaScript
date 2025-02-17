@@ -129,3 +129,16 @@ console.log(findName);
 const friends = ["Akash", "Bikash", "Asraful", "Anik"];
 const findFriend = friends.includes("Anik");
 console.log(findFriend);
+
+// reverse with loop
+const desh = "Bangladesh";
+
+let reverse = "";
+for (const letter of desh) {
+  reverse = letter + reverse;
+}
+console.log(reverse);
+
+// with method
+const updateDesh = desh.split("").reverse().join("");
+console.log(updateDesh);

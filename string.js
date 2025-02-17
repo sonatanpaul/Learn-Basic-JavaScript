@@ -100,3 +100,32 @@ if (address === newAddress) {
 const persons = "Rahim, Karim, Mahim, Kiron , Mala";
 const updatePerson = persons.split(",");
 console.log(updatePerson);
+
+// join method
+const friend = ["Rahim", " Karim", " Mahim", " Kiron ", " Mala"];
+const updateFrind = friend.join("-");
+console.log(updateFrind);
+
+// concat method
+// string
+let fName = "Sonatan";
+let lName = "Paul";
+let fullName = fName.concat(" ", lName);
+console.log(fullName);
+
+// array
+let num1 = [1, 2, 3, 4];
+let num2 = [5, 6, 7, 8];
+let totalNumber = num1.concat(num2);
+console.log(totalNumber);
+
+// includes  method
+//string
+let fulName = "Sonatan Paul";
+const findName = fulName.includes("Paul");
+console.log(findName);
+
+// array
+const friends = ["Akash", "Bikash", "Asraful", "Anik"];
+const findFriend = friends.includes("Anik");
+console.log(findFriend);

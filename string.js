@@ -79,3 +79,20 @@ if (name1.trim() === name2.trim()) {
 }
 
 //ans: My name is match
+
+// slice method
+
+const address = "Bangladesh";
+// copy address
+const newAddress = address.slice();
+const updateAddress = address.slice(0, 6);
+console.log(address); // Bangladesh
+console.log(updateAddress); // Bangla
+
+if (address === newAddress) {
+  console.log("True");
+} else {
+  console.log("False");
+}
+// Output : True 
+

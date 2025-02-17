@@ -30,3 +30,31 @@ console.log(capital); // Dhaka
 // how to check string data length check
 console.log(capital.length);
 console.log(capital[2]);
+
+// javascript always case sensetive
+const book1 = "Bangla";
+const book2 = "bangla";
+
+// option - 1
+if (book1 === book2) {
+  console.log("Ami porte boshbo");
+} else {
+  console.log("Ami porte boshbo nah");
+}
+// answer: ami porte boshbo nah
+
+// option - 2
+if (book1.toLowerCase() === book2.toLowerCase()) {
+  console.log("Ami porte boshbo");
+} else {
+  console.log("Ami porte boshbo nah");
+}
+// answer: ami porte boshbo
+
+// option - 3
+if (book1.toUpperCase() === book2.toUpperCase()) {
+  console.log("Ami porte Boshbo");
+} else {
+  console.log("Ami Porte Boshbo nah");
+}
+// answer: ami porte boshbo

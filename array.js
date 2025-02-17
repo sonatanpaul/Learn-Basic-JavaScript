@@ -71,3 +71,5 @@ const bigCity = ["Dhaka", "Rajshahi"];
 const smallCity = ["Pabna", "Bogura"];
 const cityResult = bigCity.concat(smallCity);
 console.log(cityResult);
+
+console.log("hello world");

@@ -94,5 +94,9 @@ if (address === newAddress) {
 } else {
   console.log("False");
 }
-// Output : True 
+// Output : True
 
+// split method
+const persons = "Rahim, Karim, Mahim, Kiron , Mala";
+const updatePerson = persons.split(",");
+console.log(updatePerson);

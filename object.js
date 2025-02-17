@@ -7,6 +7,11 @@ const botle = {
 };
 console.log(botle);
 
+const women = new Object({ name: "Priya", age: 25 });
+console.log(women);
+const boll = Object.create({ name: "addides", price: 5000 });
+console.log(boll);
+
 // how to check object property value
 const person = {
   name: "Sonatan",
@@ -74,3 +79,15 @@ const fruits = {
 
 console.log(fruits.taste.good);
 console.log(fruits.color[2]);
+
+const mobile = {
+  name: "Motor",
+  color: "Blue",
+  price: 30600,
+  region: "India",
+};
+
+for (const prop in mobile) {
+  //   console.log(prop);
+  console.log(mobile[prop]);
+}

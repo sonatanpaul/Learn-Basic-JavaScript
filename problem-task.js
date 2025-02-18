@@ -3,10 +3,24 @@ function calculateVAT(amount) {
   let vat = 7.5;
   if (typeof amount === "number" && amount >= 0) {
     let vatAmount = (amount * vat) / 100;
-    console.log(vatAmount);
+    return vatAmount;
   } else {
-    console.log("Invalid");
+    return "Invalid";
   }
 }
 /// Solution Done
 calculateVAT("foo");
+
+// Problem Task - 2
+
+function validContact(number) {
+  if (number.length === 11 && number.includes("01") && !number.includes(" ")) {
+    return true;
+  } else if (typeof number !== "string") {
+    return "Invalid";
+  } else {
+    return false;
+  }
+}
+// Solution Done
+validContact(true);

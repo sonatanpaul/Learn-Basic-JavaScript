@@ -11,6 +11,7 @@ function calculateVAT(amount) {
 /// Solution Done
 calculateVAT("foo");
 
+//---------------------------------------------------------------------
 // Problem Task - 2
 
 function validContact(number) {
@@ -24,3 +25,35 @@ function validContact(number) {
 }
 // Solution Done
 validContact(true);
+
+// -----------------------------------------------------------------------
+
+// Problem Task - 3
+
+function willSuccess(marks) {
+  let passMark = [];
+  let failMark = [];
+
+  if (Array.isArray(marks)) {
+    for (const mark of marks) {
+      if (mark >= 50) {
+        passMark.push(mark);
+      } else {
+        failMark.push(mark);
+      }
+    }
+    if (passMark.length > failMark.length) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return "Invalid";
+  }
+}
+
+// Solution Done
+willSuccess(90);
+
+//-----------------------------------------------------------
+

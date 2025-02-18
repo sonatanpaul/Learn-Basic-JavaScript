@@ -57,3 +57,23 @@ willSuccess(90);
 
 //-----------------------------------------------------------
 
+// Problem Task - 4
+
+function validProposal(person1, person2) {
+  let ageDifference = Math.abs(person1.age - person2.age);
+
+  if (typeof person1 === "object" && typeof person2 === "object") {
+    if (ageDifference <= 7 && person1.gender !== person2.gender) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return "Invalid";
+  }
+}
+
+// Solution Done
+validProposal("sonatan", "fas");
+
+// -----------------------------------------------------------

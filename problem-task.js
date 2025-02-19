@@ -15,10 +15,11 @@ calculateVAT("foo");
 // Problem Task - 2
 
 function validContact(number) {
+  if (typeof number !== "string") {
+    return "Invalid";
+  }
   if (number.length === 11 && number.includes("01") && !number.includes(" ")) {
     return true;
-  } else if (typeof number !== "string") {
-    return "Invalid";
   } else {
     return false;
   }
@@ -42,6 +43,7 @@ function willSuccess(marks) {
         failMark.push(mark);
       }
     }
+
     if (passMark.length > failMark.length) {
       return true;
     } else {
@@ -77,3 +79,26 @@ function validProposal(person1, person2) {
 validProposal("sonatan", "fas");
 
 // -----------------------------------------------------------
+
+// Problem Task - 5
+
+function calculateSleepTime(times) {
+  let totalNumber = 0;
+  for (const time of times) {
+    if (typeof time === "number") {
+      totalNumber = totalNumber + time;
+    } else {
+      return "Invalid";
+    }
+  }
+
+  const hours = Math.floor(totalNumber / 3600);
+  const minutes = Math.floor((totalNumber % 3600) / 60);
+  const seconds = totalNumber % 60;
+
+  return { hour: hours, minute: minutes, second: seconds };
+}
+
+// Solution Done
+const output = calculateSleepTime([1000, 499, 519, 300]);
+console.log(output);
